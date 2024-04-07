@@ -1,0 +1,485 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: var(--family_popin);
+}
+
+:root {
+    --family_popin: "Poppins", sans-serif;
+    --blueColor: #312163;
+    /* --linerGradent: linear-gradient(#4c69fc 100%, #9292f1 100%, #0a32fc 100%); */
+    --linerGradent: linear-gradient(90deg #c09ef3 100%, #4a67f7 50%);
+}
+
+
+.contactus-Heading-Imgs {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+.heading-img {
+    width: 1000px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+.form-main-div {
+    /* background-color: rgb(250, 250, 250); */
+    background: var(--linerGradent);
+    /* margin: 10px 30px; */
+    padding: 80px 0px;
+    margin: 80px 50px 0px 50px;
+    border-radius: 10px;
+}
+
+.form-num-1 {
+    text-align: center;
+    margin: 60px 0px 100px 0px;
+}
+
+.form-div {
+    display: flex;
+    justify-content: center;
+}
+
+.input-data-div {
+    background-color: white;
+    border-radius: 10px;
+    height: 550px;
+    padding: 20px;
+    margin-right: 5px;
+}
+
+.get-in-touch-h2 {
+    margin: 30px 0px 20px 0px;
+}
+
+.two-input-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.input-data-div input,
+.input-data-div textarea {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+}
+
+.subjectInput {
+    width: 500px;
+    margin: 10px 0px;
+}
+
+.messageTextarea {
+    margin: 10px 0px;
+}
+
+.svg {
+    height: 20px;
+    margin-right: 20px;
+}
+
+.data-div-heading {
+    font-weight: 900;
+}
+
+.sendBtn {
+    padding: 10px 15px;
+    background: var(--linerGradent);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* //////////////// Error Input start ////////////////////// */
+
+.errorInput1 {
+    color: red;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.errorInput2 {
+    color: #312163;
+}
+
+/* //////////////////Error Input end //////////////////////// */
+
+.address-data-div {
+    background: var(--linerGradent);
+    /* background-color: var(--blueColor); */
+    height: 650px;
+    margin-top: -50px;
+    padding: 70px 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.address-data-div-child {
+    display: flex;
+    width: 300px;
+    margin: 80px 0px;
+}
+
+.address-data-div-child p {
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .form-div {
+        flex-direction: column;
+        margin: 0px 80px;
+    }
+
+    .two-input-div {
+        width: 550px;
+    }
+
+    .nameInput,
+    .emailInput {
+        width: 250px;
+    }
+
+    .subjectInput {
+        width: 550px;
+    }
+
+    .messageTextarea {
+        width: 550px;
+    }
+
+    .address-data-div {
+        margin-top: 70px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .two-input-div {
+        width: 450px;
+    }
+
+    .nameInput,
+    .emailInput {
+        width: 200px;
+    }
+
+    .subjectInput {
+        width: 450px;
+    }
+
+    .messageTextarea {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .two-input-div {
+        width: 350px;
+    }
+
+    .nameInput,
+    .emailInput {
+        width: 160px;
+    }
+
+    .subjectInput {
+        width: 350px;
+    }
+
+    .messageTextarea {
+        width: 350px;
+    }
+
+    .address-data-div-child {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .two-input-div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nameInput,
+    .emailInput {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .subjectInput {
+        width: 90%;
+    }
+
+    .messageTextarea {
+        width: 90%;
+    }
+
+    .input-data-div {
+        height: 650px;
+    }
+
+    .address-data-div {
+        margin-left: -40px;
+        width: 120%;
+    }
+
+    .address-data-div-child {
+        width: 100%;
+        margin-left: -30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .input-data-div {
+        width: 145%;
+        margin-left: -40px;
+    }
+
+    .address-data-div {
+        height: 65%;
+        width: 140%;
+    }
+
+    .address-data-div-child {
+        flex-direction: column;
+    }
+
+    .address-data-div-child p {
+        font-size: 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+    .contactH1 {
+        font-size: 25px;
+    }
+
+    .questionH1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .contactH1 {
+        font-size: 17px;
+    }
+
+}
+
+/* ////////////////////////////////////////////////////////////////////
+
+                    Testimonial Page's css 
+
+////////////////////////////////////////////////////////////////////// */
+
+.testimonialHeading {
+    text-align: center;
+    font-size: 30px;
+    margin: 100px 0px;
+}
+
+.trust-span {
+    background: var(--linerGradent);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.testimonialCards {
+    margin: 10px 40px 0px 40px;
+    padding: 50px 50px;
+    border-radius: 10px;
+}
+
+.tetimonialCard {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.imgDiv {
+    margin-left: -70px;
+}
+
+.tetimonialCard img {
+    width: 300px;
+    height: 320px;
+    background: var(--linerGradent);
+    border-radius: 200px;
+    border: 5px solid white;
+}
+
+.dataDiv {
+    background: white;
+    padding: 10px 70px 10px 20px;
+    border: 4px solid var(--blueColor);
+    border-radius: 20px;
+}
+
+.commaSpan {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--blueColor);
+}
+
+.cusSms {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cusName {
+    color: var(--blueColor);
+    text-align: end;
+    margin-right: 20px;
+    margin-top: -8px;
+}
+
+@media screen and (max-width:990px) {
+    .tetimonialCard {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .testimonialHeading {
+        font-size: 25px;
+    }
+
+    .tetimonialCard {
+        flex-direction: column;
+    }
+
+    .dataDiv {
+        padding-right: 20px;
+    }
+
+    .imgDiv {
+        margin: auto;
+
+    }
+}
+
+@media screen and (max-width:750px) {
+    .cusSms {
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .commaSpan {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .tetimonialCard img {
+        width: 200px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .testimonialHeading {
+        font-size: 14px;
+        padding: 0px 10px;
+    }
+
+    .tetimonialCard img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .cusSms {
+        font-size: 10px;
+    }
+
+    .commaSpan {
+        font-size: 10px;
+    }
+
+    .cusName {
+        padding-top: 10px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .tetimonialCard img {
+        width: 80px;
+        height: 100px;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////
+
+                            FAQs Page's css 
+
+///////////////////////////////////////////////////////////////////////////// */
+.faqs-main-div {
+    background: var(--linerGradent);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.faqs-heading {
+    margin-bottom:50px;
+}
+
+.faqs-div {
+    margin: 5px 0px;
+    width: 50%;
+    font-size: 25px;
+}
+
+.faqs-question-div {
+    background:white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.plus {
+    padding: 0px 10px;
+    border-radius: 20px;
+    background: var(--linerGradent);
+    cursor: pointer;
+    color: white;
+}
+
+.plus,
+.answer {
+    margin: 0px 20px;
+}
+.question{
+    font-size: 20px;
+}
+.answer {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 40px;
+}
+
+.faqs-answer-div {
+    background-color:white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 1px;
+}
